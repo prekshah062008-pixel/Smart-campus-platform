@@ -1,0 +1,6 @@
+[INFO] Cluster State: campus-platform-backend-1 (HEALTHY), campus-platform-backend-2 (HEALTHY)
+[ACTION] Initiating graceful shutdown: docker stop campus-platform-backend-1
+[WARN] Container campus-platform-backend-1 stopped.
+[INFO] NGINX HealthCheck: Routing 100% traffic to campus-platform-backend-2
+[TEST] Executing HTTP GET /api/v1/facilities -> Response: 200 OK (Served by campus-platform-backend-2)
+[RESULT] Zero downtime confirmed. Failover operation successful.
